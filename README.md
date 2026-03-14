@@ -1,59 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <h1 align="center">💻 Flow</h1>
+  <p align="center"><strong>by Ismael Manzano León</strong></p>
 </p>
 
-## About Laravel
+<p align="center">
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-00FFAB.svg" alt="License"></a>
+<a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.3-777bb4.svg" alt="PHP Version"></a>
+<a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11-ff2d20.svg" alt="Laravel Version"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Sobre Flow
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Flow es un proyecto personal nacido de la necesidad de aprender a trabajar como lo hacen las **Big Tech**, pero desde una perspectiva de calma y control. Como desarrollador junior, sé que el salto de "hacer código" a "trabajar en un equipo de profesionales" puede ser abrumador.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este simulador está diseñado para que todos podamos practicar el flujo de trabajo profesional (Scrum, Git Flow, Code Reviews) en un entorno seguro, guiados por una Squad de IA que nos ayuda a entender el "porqué" de las cosas, sin presiones y con una jerga técnica clara.
 
-## Learning Laravel
+- **Calma Productiva:** Una interfaz diseñada en tonos Dark Mint para reducir el estrés.
+- **Aprendizaje Real:** No es solo un gestor de tareas; es un simulador de procesos de ingeniería.
+- **Squad de Apoyo:** Tres agentes de IA (PO, Scrum Master y Tech Lead) que actúan como compañeros experimentados.
+- **Diccionario Integrado:** Conceptos técnicos explicados con ejemplos reales al pasar el ratón.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## ¿Cómo funciona el ecosistema?
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Creemos que el desarrollo debe ser una experiencia creativa y organizada. Flow facilita tareas que suelen ser confusas al principio:
 
-## Laravel Sponsors
+- **Refinamiento de Tareas:** Trabaja con el Product Owner para definir criterios de aceptación sólidos.
+- **Sincronización Local:** Conexión directa con tu repositorio Git para mover el tablero automáticamente.
+- **Auditoría Técnica:** Aprende principios SOLID y Clean Code con las revisiones del Tech Lead.
+- **Gestión de Sprints:** Entiende el valor del tiempo y la velocidad sin morir en el intento.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Estado del Proyecto
 
-### Premium Partners
+Actualmente, Flow se encuentra en desarrollo activo. Estamos construyendo los cimientos de lo que será una herramienta de práctica diaria para desarrolladores que, como yo, buscan la excelencia técnica cada día.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- [x] **Fase 1:** Arquitectura de base de datos y modelos de dominio.
+- [ ] **Fase 2:** Implementación de la interfaz "Mint" y Layout Maestro.
+- [ ] **Fase 3:** Motor de agentes de IA y sistema de comunicación.
+- [ ] **Fase 4:** Integración con Git Bridge.
 
-## Contributing
+## Contribuir
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Este es un proyecto abierto al aprendizaje. Si tienes ideas sobre cómo mejorar el flujo de trabajo para que sea más humano y educativo, cualquier sugerencia es más que bienvenida.
 
-## Code of Conduct
+## Licencia
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Flow es un software de código abierto bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="center">Construido con ganas de aprender por <strong>Ismael Manzano León</strong>.</p>
