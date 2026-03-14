@@ -1,11 +1,10 @@
-<section>
-    <header>
-        <h2 class="text-lg font-medium text-gray-900">
-            {{ __('Profile Information') }}
+<section class="space-y-6">
+    <header class="border-b border-[#2a2a2e] pb-4">
+        <h2 class="font-tech text-xs font-black text-white uppercase tracking-widest">
+            {{ __('IDENTITY_PROTOCOL_INFO') }}
         </h2>
-
-        <p class="mt-1 text-sm text-gray-600">
-            {{ __("Update your account's profile information and email address.") }}
+        <p class="mt-1 font-tech text-[8px] text-zinc-700 uppercase font-black">
+            {{ __("UPDATE_OPERATOR_CORE_DATA_AND_COMM_ID") }}
         </p>
     </header>
 
@@ -13,51 +12,27 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+    <form method="post" action="{{ route('profile.update') }}" class="space-y-4">
         @csrf
         @method('patch')
 
         <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
+            <label class="font-tech text-[8px] uppercase tracking-widest text-zinc-600 mb-1 block">OP_NAME</label>
+            <input name="name" type="text" class="w-full bg-[#1a1a1e] border border-[#2a2a2e] p-3 font-tech text-[10px] text-white focus:border-[#0052ff] outline-none" value="{{ old('name', $user->name) }}" required autofocus />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
         <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
+            <label class="font-tech text-[8px] uppercase tracking-widest text-zinc-600 mb-1 block">COMM_LINK_EMAIL</label>
+            <input name="email" type="email" class="w-full bg-[#1a1a1e] border border-[#2a2a2e] p-3 font-tech text-[10px] text-white focus:border-[#0052ff] outline-none" value="{{ old('email', $user->email) }}" required />
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
-
-            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
-                <div>
-                    <p class="text-sm mt-2 text-gray-800">
-                        {{ __('Your email address is unverified.') }}
-
-                        <button form="send-verification" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            {{ __('Click here to re-send the verification email.') }}
-                        </button>
-                    </p>
-
-                    @if (session('status') === 'verification-link-sent')
-                        <p class="mt-2 font-medium text-sm text-green-600">
-                            {{ __('A new verification link has been sent to your email address.') }}
-                        </p>
-                    @endif
-                </div>
-            @endif
         </div>
 
-        <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
+        <div class="flex items-center gap-4 pt-4">
+            <button type="submit" class="btn-tech-primary">COMMIT_CHANGES</button>
 
             @if (session('status') === 'profile-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600"
-                >{{ __('Saved.') }}</p>
+                <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)" class="font-tech text-[8px] text-[#0052ff] uppercase font-black">SUCCESS_WRITTEN</p>
             @endif
         </div>
     </form>

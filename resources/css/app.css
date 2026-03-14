@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-mint: #98ff98;
+        --color-anthracite: #2f4f4f;
+        --color-bg: #1a1b1e;
+        --color-panel: #242529;
+        --color-border: #2e2f33;
+    }
+
+    body {
+        @apply bg-[#1a1b1e] text-zinc-300 antialiased;
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+}
+
+@layer components {
+    .p-technical {
+        @apply bg-[#242529] border border-[#2e2f33] rounded-md;
+    }
+
+    .btn-mint {
+        @apply bg-[#98ff98] text-[#2f4f4f] px-4 py-2 font-bold rounded-md hover:brightness-110 transition-all;
+    }
+}

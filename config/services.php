@@ -35,4 +35,17 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Flow by Ismael Manzano León - AI Engine
+    |--------------------------------------------------------------------------
+    |
+    | Configuración para el motor de auditoría basado en Gemini 3 Flash Preview.
+    |
+    */
+
+    'gemini' => [
+        'key' => env('GEMINI_API_KEY'),
+    ],
+
 ];
