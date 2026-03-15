@@ -22,7 +22,7 @@ Flow es un proyecto personal diseñado para perfeccionar el flujo de trabajo pro
 Actualmente, Flow se encuentra en desarrollo activo y funcional.
 
 - [x] **Fase 1:** Arquitectura de base de datos y modelos de dominio.
-- [ ] **Fase 2:** Implementación de la interfaz "Mint" y Layout Maestro.
+- [X] **Fase 2:** Implementación de la interfaz "Mint" y Layout Maestro.
 - [ ] **Fase 3:** Motor de agentes de IA y sistema de comunicación.
 - [ ] **Fase 4:** Integración con Git Bridge.
 
